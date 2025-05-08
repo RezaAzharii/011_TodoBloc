@@ -107,7 +107,26 @@ class TodoPage extends StatelessWidget {
                       if (state.todos.isEmpty) {
                         return Center(child: Text('Todo list is empty'));
                       }
-                      
+                      return ListView.builder(
+                        itemCount: state.todos.length,
+                        itemBuilder: (context, index) {
+                          final todo = state.todos[index];
+                          return Container(
+                            margin: EdgeInsets.only(bottom: 8.0),
+                            padding: EdgeInsets.all(16.0),
+                            decoration: BoxDecoration(
+                              color: Colors.blue[50],
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                
+                              ],
+                            ),
+                          );
+                        },
+                      );
                     } else {
                       return Center(child: Text('No todos available'));
                     }
