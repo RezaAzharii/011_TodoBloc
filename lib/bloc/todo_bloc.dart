@@ -1,5 +1,3 @@
-import 'dart:nativewrappers/_internal/vm/lib/internal_patch.dart';
-
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 import 'package:todobloc_app/model/todo.dart';
